@@ -8,7 +8,7 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.XXX.entity
+  type-aliases-package: com.lzf.springcloud.entity
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 spring:
@@ -39,7 +39,7 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.XXX.entity
+  type-aliases-package: com.lzf.springcloud.entity
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 spring:
