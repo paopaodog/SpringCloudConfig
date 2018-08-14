@@ -1,13 +1,14 @@
 spring:
   profiles:
-    active: dev
+    active: 
+      - dev
     
 ---
 server:
   port: 8001
   profiles: dev
   application:
-    name: microservice-config-dept-client-dev
+    name: microservice-config-provider-dept-client-dev
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
@@ -47,7 +48,7 @@ server:
   port: 8001
   profiles: test
   application:
-    name: microservice-config-dept-client-test
+    name: microservice-config-provider-dept-client-test
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
