@@ -5,7 +5,8 @@ spring:
     
 ---
 server:
-  port: 8001
+   port: 8001
+spring:
   profiles: dev
   application:
     name: microservice-config-provider-dept-client-dev
@@ -46,6 +47,8 @@ info:
 ---
 server:
   port: 8001
+  
+spring:
   profiles: test
   application:
     name: microservice-config-provider-dept-client-test

@@ -4,8 +4,9 @@ spring:
         - dev
 
 ---
-spring:
+server:
   port: 7001
+spring:
   profiles: dev
   application:
     name: microservice-config-eureka-client-dev
@@ -20,8 +21,9 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/        #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址。
 
 ---
-spring:
+server:
   port: 7001
+spring:
   profiles: test
   application:
     name: microservice-config-eureka-client-test
